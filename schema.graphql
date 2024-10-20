@@ -1,0 +1,22 @@
+type FairbearFactory_Buy {
+  id: ID!
+  blockTimestamp: Int!
+  blockNumber: Int!
+  token: String!
+  from: String!
+  to: String!
+  amountIn: BigInt!
+  amountOut: BigInt!
+}
+
+type FairbearFactory_Sell {
+  id: ID!
+  blockTimestamp: Int!
+  blockNumber: Int!
+  token: String!
+  from: String!
+  to: String!
+  amountIn: BigInt!
+  amountOut: BigInt!
+}
+

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: fb-indexer
+networks:
+- id: 80084
+  rpc_config:
+    url: https://bera-testnet.nodeinfra.com # RPC URL that will be used to subscribe to blockchain data on this network
+    # url: http://erpc:4000/main/evm/80084
+  start_block: 4138103
+  contracts:
+  - name: FairbearFactory
+    address:
+    - 0x81B5364a34E64AaFcBc99AA0BC4cE7d5D9ac4254
+    handler: src/EventHandlers.ts
+    events:
+    - event: Buy(address indexed token, address from, address to, uint256 amountIn, uint256 amountOut)
+    - event: Sell(address indexed token, address from, address to, uint256 amountIn, uint256 amountOut)
+rollback_on_reorg: false
