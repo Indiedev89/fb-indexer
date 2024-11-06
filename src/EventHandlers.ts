@@ -36,3 +36,4 @@ FairbearFactory.Sell.handler(async ({ event, context }) => {
 
   context.FairbearFactory_Sell.set(entity);
 });
+

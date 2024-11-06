@@ -1,0 +1,55 @@
+Arguments: 
+  /Users/Degenerate96/.nvm/versions/node/v18.0.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js
+
+PATH: 
+  /Users/Degenerate96/.bun/bin:/opt/homebrew/bin:/Users/Degenerate96/.nvm/versions/node/v18.0.0/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/share/dotnet:/Users/Degenerate96/.dotnet/tools:/Users/Degenerate96/.cargo/bin:/Users/Degenerate96/.foundry/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.0.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/Degenerate96/Library/Caches/Yarn/v6/npm-wrap-ansi-6.2.0-e9393ba07102e6c91a3b221478f0257cd2856e53-integrity/node_modules/wrap-ansi/index.js' -> '/Users/Degenerate96/Documents/envio-indexer/fb-indexer/node_modules/ink/node_modules/wrap-ansi/index.js'
+
+npm manifest: 
+  {
+    "name": "fb-indexer",
+    "version": "0.1.0",
+    "scripts": {
+      "clean": "tsc --clean",
+      "build": "tsc --build",
+      "watch": "tsc --watch",
+      "mocha": "ts-mocha test/**/*.ts",
+      "codegen": "envio codegen",
+      "dev": "envio dev",
+      "test": "pnpm mocha",
+      "start": "ts-node generated/src/Index.bs.js"
+    },
+    "devDependencies": {
+      "@types/chai": "^4.3.11",
+      "@types/mocha": "10.0.6",
+      "@types/node": "20.8.8",
+      "ts-mocha": "^10.0.0",
+      "ts-node": "10.9.1",
+      "typescript": "5.2.2",
+      "chai": "4.3.10",
+      "mocha": "10.2.0"
+    },
+    "dependencies": {
+      "envio": "2.6.0"
+    },
+    "optionalDependencies": {
+      "generated": "./generated"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
