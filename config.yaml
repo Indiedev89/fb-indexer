@@ -3,7 +3,7 @@ name: fb-indexer
 networks:
 - id: 80084
   rpc_config:
-    url: https://bera-testnet.nodeinfra.com # RPC URL that will be used to subscribe to blockchain data on this network
+    url: https://berachain-bartio.rpc.hypersync.xyz # RPC URL that will be used to subscribe to blockchain data on this network
     # url: http://erpc:4000/main/evm/80084
   start_block: 4138103
   contracts:
