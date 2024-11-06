@@ -5,7 +5,7 @@ networks:
   rpc_config:
     url: https://berachain-bartio.rpc.hypersync.xyz # RPC URL that will be used to subscribe to blockchain data on this network
     # url: http://erpc:4000/main/evm/80084
-  start_block: 4139000
+  start_block: 4139500
   contracts:
   - name: FairbearFactory
     address:
